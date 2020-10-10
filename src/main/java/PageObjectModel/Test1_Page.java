@@ -74,17 +74,9 @@ public void typeFirstname1(String firstname){
 
     sendKeysFunction(firstname1,firstname);
 }
-    public void typeLastname1(String lastname){
-
-        sendKeysFunction(lastname1,lastname);
-    }
     public void password(String password){
 
         sendKeysFunction(password1,password);
-    }
-    public void typeFirstname2(String firstname_2){
-
-        sendKeysFunction(firstname2,firstname_2);
     }
     public void typeLasstname1(String lastname_2){
 

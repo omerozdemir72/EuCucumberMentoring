@@ -1,6 +1,6 @@
-Feature: Login Functionality
+Feature: Sign in Test
 
-  Scenario Outline: Login with valid username and password
+  Scenario Outline: Sign in Testi
 
     Given Websiteye git
 
@@ -16,15 +16,16 @@ Feature: Login Functionality
 
     And password "<Password>" gir
 
-
     When Company "<Company>" gir
 
-    Then Adres "<Address>" gir
+    Then  Adres "<Address>" gir
 
     Examples:
-      |Email| Firstname|lastname | Password | Company | Address|
-      |omeroz@gmail.com| Omer| Ozdemir | omer123|Techno Study|RicardaHuchWeg22|
-      |huseyinoz@gmail.com| Huseyin| Ozdemir | asd123|Google|RicardaHuchWeg23|
-      |cigdemArslan@gmail.com| Cigdem| Arslan | 123123|Apple|RicardaHuchWeg24|
-      |yusufOzdemir@gmail.com| Yusuf| Ozdemir | 22123|Siemens|RicardaHuchWeg25|
+
+    |Email|Firstname|lastname|Password|Company|Address|
+    |omeroz@gmail.com|Omer|Ozdemir  |omer123|Techno Study|Ricarda Huch weg22|
+    |cigdemarslan@gmail.com|Cigdem|Arslan |cigdem123|Apple|Ricarda Huch weg23|
+    |vehbi@gmail.com|vehbi|ozdemir |vehbi123|Siemens|Ricarda Huch weg24|
+    |huseyin@gmail.com|huseyin|ozdemir |huseyin123|Amazon|Ricarda Huch weg25|
+
 

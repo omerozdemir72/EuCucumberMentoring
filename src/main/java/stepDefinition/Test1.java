@@ -47,23 +47,23 @@ public class Test1 {
     }
 
     @And("^firstname \"([^\"]*)\" ve  lastname \"([^\"]*)\" gir$")
-    public void firstnameVeLastnameGir(String arg0, String arg1) throws Throwable {
+    public void firstnameVeLastnameGir(String firstname, String lastname) throws Throwable {
 
-        test1_page.typeFirstname1(arg0);
-        test1_page.typeLasstname1(arg1);
+        test1_page.typeFirstname1(firstname);
+        test1_page.typeLasstname1(lastname);
     }
 
     @And("^password \"([^\"]*)\" gir$")
-    public void passwordGir(String arg0) throws Throwable {
-        test1_page.password(arg0);
+    public void passwordGir(String password) throws Throwable {
+        test1_page.password(password);
     }
     @When("^Company \"([^\"]*)\" gir$")
-    public void companyGir(String arg0) throws Throwable {
-        test1_page.typeCompany(arg0);
+    public void companyGir(String company) throws Throwable {
+        test1_page.typeCompany(company);
     }
     @Then("^Adres \"([^\"]*)\" gir$")
-    public void adresGir(String arg0) throws Throwable {
-        test1_page.typeAddress(arg0);
+    public void adresGir(String address) throws Throwable {
+        test1_page.typeAddress(address);
 
     }
     @After
