@@ -2,6 +2,7 @@ package utilities;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.logging.LogType;
 
@@ -15,8 +16,8 @@ public class Driver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            System.setProperty("webdriver.gecko.driver", "C:\\Users\\omero\\Selenium\\geckodriver.exe");
-            driver= new FirefoxDriver();
+            System.setProperty("webdriver.chrome.driver", "C:/Users/omero/Selenium/ChromeDriver/chromedriver.exe");
+            driver = new ChromeDriver();
         }
         return driver;
     }
@@ -29,13 +30,6 @@ public class Driver {
             driver=null;
         }
     }
-    public static void clearConsoleErrors(){
-        JavascriptExecutor js = (JavascriptExecutor)getDriver();
-        String script = "console.clear();";
-        js.executeScript(script);
-        getDriver().manage().logs().get(LogType.BROWSER).filter(Level.ALL);
-    }
-
 
 }
 

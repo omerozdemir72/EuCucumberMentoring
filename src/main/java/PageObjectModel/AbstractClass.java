@@ -125,6 +125,19 @@ deleteButton.click();
     }
 
 
+    public void Assertion(WebElement actual,String expected){
+
+        Assert.assertEquals(actual.getText(),expected);
+
+        System.out.println("My Message :  " + actual.getText());
+    }
+
+    public void URLAssertion(String expectedUrl){
+
+        Assert.assertEquals(driver.getCurrentUrl(),expectedUrl);
+
+        System.out.println("My current url :   " + driver.getCurrentUrl());
+    }
 
 }
 
