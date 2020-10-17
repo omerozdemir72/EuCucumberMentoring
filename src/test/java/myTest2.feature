@@ -1,3 +1,4 @@
+@RegressionTest
 Feature: Favorilere Ekleme
 
   Scenario: Ürünü favorilere ekleme testi

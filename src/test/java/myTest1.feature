@@ -1,3 +1,4 @@
+@RegressionTest
 Feature: Sign in Test
 
   Scenario Outline: Sign in Testi

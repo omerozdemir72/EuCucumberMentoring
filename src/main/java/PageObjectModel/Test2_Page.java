@@ -37,5 +37,16 @@ private WebDriver driver;
         Thread.sleep(1500);
     }
 
+    @FindBy(css = ".fancybox-error")
+    private WebElement alertMessage;
+
+
+    public void assertMessage(String message){
+
+
+        Assertion(alertMessage,message);
+    }
+
+
 
 }

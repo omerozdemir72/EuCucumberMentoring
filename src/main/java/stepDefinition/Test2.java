@@ -26,7 +26,7 @@ test2_page.clickWishList();
     }
 
     @Then("^cikan mesaji verify et \"([^\"]*)\"$")
-    public void cikan_mesaji_verify_et(String arg1) throws Throwable {
-
+    public void cikan_mesaji_verify_et(String message1) throws Throwable {
+        test2_page.assertMessage(message1);
     }
 }
