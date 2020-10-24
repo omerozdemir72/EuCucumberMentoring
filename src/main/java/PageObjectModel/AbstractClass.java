@@ -6,13 +6,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import utilities.Driver;
+import utilities.driver2;
 
 import java.util.List;
 import java.util.Random;
 
 public abstract  class AbstractClass {
 
-    private WebDriver driver = Driver.getDriver();
+    private WebDriver driver = driver2.getDriver();
 
 
     WebDriverWait wait = new WebDriverWait(driver, 10);

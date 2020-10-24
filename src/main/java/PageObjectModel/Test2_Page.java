@@ -1,16 +1,16 @@
 package PageObjectModel;
 
-import gherkin.lexer.Th;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+import utilities.driver2;
 
 public class Test2_Page extends AbstractClass {
 private WebDriver driver;
     public Test2_Page(){
-        driver= Driver.getDriver();
+        driver= driver2.getDriver();
         PageFactory.initElements(driver,this);
     }
 

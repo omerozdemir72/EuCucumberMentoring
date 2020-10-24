@@ -8,6 +8,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
 import utilities.Driver;
+import utilities.driver2;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,7 +17,7 @@ public class Test1 {
     Test1_Page test1_page= new Test1_Page();
     @Given("^Websiteye git$")
     public void websiteye_git() throws Throwable {
-        driver= Driver.getDriver();
+        driver= driver2.getDriver();
         driver.manage().window().maximize();
         driver.get("http://automationpractice.com/index.php");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -70,7 +71,7 @@ public class Test1 {
     public void driverQuit() throws InterruptedException {
 
         Thread.sleep(2000);
-        Driver.quitDriver();
+                driver2.quitDriver();
 
 
     }
